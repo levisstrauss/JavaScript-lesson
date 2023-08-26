@@ -22,7 +22,7 @@ catSound = "meow"
 console.log(petCat, "now says", catSound)
 
 
-//================ Operators ====================
+//================ Operators ====================>
 
 
 /*
@@ -67,15 +67,15 @@ console.log("Mid-level skills:", (score > 0 && score < 10));
 
 var timeRemaining = 0;
 var energy = 10;
-console.log("Game over: ", (timeRemaining == 0 || energy == 0));
+console.log("Game over: ", (timeRemaining === 0 || energy === 0));
 
 // Test
 var num1 = 2;
 var num2 = 5;
 var test1 =  num1 % 2;
 var test2 =  num2 % 2;
-var result1 = test1 == 0;
-var result2 = test2 == 0;
+var result1 = test1 === 0;
+var result2 = test2 === 0;
 console.log("Is", num1, "an even number?", result1);
 console.log("Is", num2, "an even number?", result2);
 
@@ -104,7 +104,7 @@ console.log(i);
 
 
 
-//================ Conditionals and loops ====================
+//================ Conditionals and loops ====================>
 
 // The switch stament can be used to repalce a complicate switch statement 
 var result = 30;
@@ -126,12 +126,13 @@ switch(results){
     default:
         console.log("i don't know");     
 }
+var light = "green";
 
-if(light == "green") {
+if(light === "green") {
     console.log("Drive")
-} else if (light == "orange") {
+} else if (light === "orange") {
     console.log("Get ready")
-} else if (light == "red") {
+} else if (light === "red") {
     console.log("Dont' drive")
 } else {
     //this block will run if no condition matches
@@ -209,7 +210,93 @@ for(var i = 0; i<4; i++){
 
 var i = 1;
 
-while(i< 4){
+while(i < 4){
     console.log(i);
     i = i+1;
+}
+
+for (var i = 1; i <= 5; i++) {
+    console.log(i);
+};
+console.log('Counting completed!');
+
+
+for (var i = 5; i > 0; i--) {
+    console.log(i);
+};
+console.log('Countdown finished!');
+
+var i = 1;
+while (i < 6) {
+    console.log(i);
+    i++;
+};
+console.log('Counting completed!');
+
+var i = 5;
+while (i > 0) {
+    console.log(i);
+    i = i - 1;
+};
+console.log('Counting completed!');
+
+
+var year = 2018;
+while (year < 2023) {
+    console.log(year);
+    year++;
+};
+
+// Nested loop
+
+for(var i = 0; i < 2; i++){
+    console.log(i);
+    for(var j = 2; j < 3; j++){
+        console.log(j)
+    }
+}
+
+// Single loop
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+    console.log(firstNum);
+}
+
+// Nested Loop
+//nested loops - one inside another
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+    for (var secondNum = 0; secondNum < 10; secondNum++) {
+        console.log(firstNum + " times " + secondNum + " equals " + firstNum * secondNum);
+    }
+}
+
+// Exercise
+
+for (let i = 1; i <= 10; i++) {
+    if (i === 1) {
+        console.log("Gold medal");
+    } else if (i === 2) {
+        console.log("Silver medal");
+    } else if (i === 3) {
+        console.log("Bronze medal");
+    } else {
+        console.log(i);
+    }
+}
+
+// The same things wit conditional replaced by switch
+
+for (let i = 1; i <= 10; i++) {
+    switch (i) {
+        case 1:
+            console.log("Gold medal");
+            break;
+        case 2:
+            console.log("Silver medal");
+            break;
+        case 3:
+            console.log("Bronze medal");
+            break;
+        default:
+            console.log(i);
+    }
 }
