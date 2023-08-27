@@ -125,3 +125,33 @@ console.log(person.firstName); // Outputs: John
 
 // Calling a method inside the object
 person.greet(); // Outputs: Hello, I am John Doe
+
+// Exercise
+//example of adding properties and methods to an object
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car);
+car.turnTheKey = function() {
+    console.log("The engine is running")
+}
+car.lightsOn = function() {
+    console.log("The lights are on.")
+}
+console.log(car);
+car.turnTheKey();
+car.lightsOn()
+
+//-------------------- Exercise----------------->
+
+let purchase1 = {
+    shoes: 100,
+    stateTax: 1.2,
+    totalPrice: function() {
+        var calculation = this.shoes * this.stateTax;
+        console.log("Total price:", calculation)
+    }
+}
+
+// Execution
+purchase1.totalPrice()// Calling the function
