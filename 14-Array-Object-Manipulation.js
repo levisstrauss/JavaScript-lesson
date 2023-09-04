@@ -3,6 +3,15 @@
 let numbers = [1, 2, 3];
 let doubled = numbers.map(num => num * 2); // [2, 4, 6]
 
+const names = [
+  { name: 'Sonny', likes: 'Coding' };
+  { name: 'Jay', likes: 'Gaming'   },
+]
+
+const namesByLikes = names.map((item) => ({
+  [item.name]: item.likes,
+}));
+
 //------- .filter()--------------------->
 // Returns a new array containing all elements that pass the test implemented by the provided function
 let filtered = numbers.filter(num => num > 1); // [2, 3]
@@ -12,16 +21,20 @@ let filtered = numbers.filter(num => num > 1); // [2, 3]
 let sum = numbers.reduce((acc, curr) => acc + curr, 0); // 6
 
 //------- .some()--------------------->
-//Checks if at least one element passes the test implemented by the provided function.
+//Check if at least one element passes the test implemented by the provided function.
 let hasEvenNumber = numbers.some(num => num % 2 === 0); // true
 
 //------- .every()--------------------->
-//Checks if all elements pass the test implemented by the provided function.
+//Check if all elements pass the test implemented by the provided function.
 let areAllEven = numbers.every(num => num % 2 === 0); // false
 
 //---------- forEach() ------------------>
 // Executes a provided function once for each array element.
 numbers.forEach(num => console.log(num)); // 1 2 3
+
+//---------- find() ------------------>
+const names = ["Sonny", "Jay"]
+const result = names.find((name => name.startsWith("J")));
 
 //------------ slice() -------------------->
 // Returns a shallow copy of a portion of the array into a new array.
