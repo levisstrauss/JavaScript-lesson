@@ -2,9 +2,7 @@
 //-------------------Let & Const------------------->
 let variable = "This is variable"; // can be reassigned
 const constant = "This is constant"; // cannot be reassigned
-
 //-------------- Arrow Functions------------------>
-
 const square = x => x * x;
 
 //-------------------Spread/Rest Operator------------>
@@ -12,20 +10,15 @@ let arr = [1, 2, 3];
 let newArr = [...arr, 4, 5]; // Spread
 
 const gatherArgs = (...args) => console.log(args); // Rest
-
 //-----------------------Destructuring------------------>
 let person = {name: 'John', age: 25};
 let {name, age} = person;
-
 //----------------- Template Literals--------------------->
 let greeting = `Hello, my name is ${name} and I am ${age} years old.`;
 
-
 //-------------------- Modules--------------------------------->
-
 // file1.js
 export const hello = "Hello";
-
 // file2.js
 import { hello } from './file1';
 

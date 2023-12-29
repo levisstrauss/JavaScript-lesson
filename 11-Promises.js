@@ -8,7 +8,6 @@
 });
  */
 
-
 let promise = new Promise((resolve, reject) => {
     // some asynchronous operation
     setTimeout(() => {

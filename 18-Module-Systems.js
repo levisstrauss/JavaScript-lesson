@@ -1,21 +1,17 @@
 //------ CommonJS (CJS) --------------------->
 // Exporting
 module.exports = someFunction;
-
 // Importing
 const someFunction = require('./someFunction');
-
 //------ Asynchronous Module Definition (AMD) --------------------->
 // Define a module
 define(['dependency1', 'dependency2'], function(dep1, dep2) {
     return someFunction;
 });
-
 // Require a module
 require(['module'], function(module) {
     // Use the module here
 });
-
 //------ Universal Module Definition (UMD) --------------------->
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {

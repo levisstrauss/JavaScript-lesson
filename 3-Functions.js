@@ -24,7 +24,6 @@ function add(a, b) {
 let sum = add(5, 3); // Calls the function with arguments 5 and 3
 console.log(sum);    // Prints 8
 
-
 // Task 1: Function definition
 function letterFinder(word, match) {
     // Task 2: 'for' loop setup
@@ -39,6 +38,5 @@ function letterFinder(word, match) {
         }
     }
 }
-
 // Task 6: Call the function
 letterFinder("test", "t");

@@ -2,7 +2,6 @@
 function add(a, b) {
     return a + b;
 }
-
 //------------- Immutability -------------------->
 
 const arr = [1, 2, 3];
@@ -14,13 +13,11 @@ function higherOrder(fn) {
         return fn();
     };
 }
-
 //------------- Map/Reduce ---------------------->
 const arr = [1, 2, 3];
 const squared = arr.map(x => x * x);
 
 const sum = arr.reduce((acc, curr) => acc + curr, 0);
-
 //------------- Currying------------------------->
 function curryAdd(a) {
     return function(b) {
@@ -29,7 +26,6 @@ function curryAdd(a) {
 }
 const add5 = curryAdd(5);
 add5(3); // returns 8
-
 //------------- Composition----------------------->
 
 function double(x) {

@@ -1,14 +1,11 @@
 
 //------------------- Global Context--------------->
 console.log(this === window); // true
-
-
 //------------ Inside of the functions -------------->
 function exampleFunction() {
     console.log(this);
 }
 exampleFunction(); // window in non-strict mode, undefined in strict mode
-
 
 //----------- Inside an object---------------------->
 const obj = {
@@ -44,7 +41,8 @@ const objWithArrowFunction = {
         console.log(`Hello, my name is ${this.name}`);
     }
 };
-objWithArrowFunction.sayHello(); // Hello, my name is undefined (because 'this' is not bound to the object)
+objWithArrowFunction.sayHello(); // Hello, my name is undefined
+// (because 'this' is not bound to the object)
 
 // ------ Bind, call, apply----------------------->
 function introduce(language) {

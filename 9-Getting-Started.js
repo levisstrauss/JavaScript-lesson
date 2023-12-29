@@ -1,7 +1,6 @@
 /*
-
-1. Including JavaScript
-JavaScript can be added to an HTML file in two primary ways: inline scripts and external scripts.
+1. Including JavaScript can be added to an HTML file in two primary ways:
+inline scripts and external scripts.
 
 Inline Script:
 You can include JavaScript directly within your HTML files using the <script> tag.
@@ -59,7 +58,5 @@ Executing JS Code: You can type JavaScript directly into the console and execute
 
 Debugging: Use commands like console.warn(), console.error(), and console.table() to display messages in different
 formats and styles. You can also set breakpoints in your code from the Sources tab, allowing you to pause execution and
- inspect variable values.
-
-
+inspect variable values.
  */

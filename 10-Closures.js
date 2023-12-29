@@ -1,8 +1,6 @@
 // Creating Private Variables
-
 function createPerson(name) {
     let age = 25;  // private variable
-
     return {
         getName: function() {
             return name;
@@ -24,9 +22,9 @@ console.log(john.getAge());  // 26
 
 /*
 Here, age is private. There's no way to access age except through the methods provided.
-
 b. Function Factories
-Closures allow you to create function factories: functions that return other functions, but with certain fixed parameters.
+Closures allow you to create function factories: functions that return other
+functions, but with certain fixed parameters.
  */
 function multiplyBy(factor) {
     return function(x) {
@@ -44,10 +42,8 @@ console.log(triple(5)); // 15
 Counters
 Closures can also be used to create stateful functions, such as counters:
  */
-
 function createCounter() {
     let count = 0;
-
     return function() {
         return count++;
     };

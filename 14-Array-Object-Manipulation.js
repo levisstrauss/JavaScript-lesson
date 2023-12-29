@@ -3,12 +3,12 @@
 let numbers = [1, 2, 3];
 let doubled = numbers.map(num => num * 2); // [2, 4, 6]
 
-const names = [
-  { name: 'Sonny', likes: 'Coding' };
+const name = [
+  { name: 'Sonny', likes: 'Coding' },
   { name: 'Jay', likes: 'Gaming'   },
 ]
 
-const namesByLikes = names.map((item) => ({
+const namesByLikes = name.map((item) => ({
   [item.name]: item.likes,
 }));
 
@@ -23,11 +23,9 @@ let sum = numbers.reduce((acc, curr) => acc + curr, 0); // 6
 //------- .some()--------------------->
 //Check if at least one element passes the test implemented by the provided function.
 let hasEvenNumber = numbers.some(num => num % 2 === 0); // true
-
 //------- .every()--------------------->
 //Check if all elements pass the test implemented by the provided function.
 let areAllEven = numbers.every(num => num % 2 === 0); // false
-
 //---------- forEach() ------------------>
 // Executes a provided function once for each array element.
 numbers.forEach(num => console.log(num)); // 1 2 3
@@ -39,7 +37,6 @@ const result = names.find((name => name.startsWith("J")));
 //------------ slice() -------------------->
 // Returns a shallow copy of a portion of the array into a new array.
 let sliced = numbers.slice(1, 3); // [2, 3]
-
 //------------- Object.assign()------------->
 //Used to copy the values of all enumerable properties from one or more source objects to a target object.
 let obj1 = { a: 1 };
@@ -53,7 +50,6 @@ let keys = Object.keys(merged); // ['a', 'b']
 //-------------- Object.values() ---------------->
 // Returns an array of a given object's property values.
 let values = Object.values(merged); // [1, 2]
-
 //------------ Object.entries() ------------------>
 // Returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
 let entries = Object.entries(merged); // [['a', 1], ['b', 2]]

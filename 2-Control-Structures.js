@@ -31,7 +31,8 @@ do {
     value++;
 } while (value < 2);
 
-//--------- Switch Statement: A type of conditional statement used when there are multiple conditions to be checked-->
+//-- Switch Statement: A type of conditional statement used when
+// there are multiple conditions to be checked-->
 
 let day = "Tuesday";
 
